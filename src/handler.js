@@ -1,5 +1,11 @@
 import fs from "fs";
 
+// check if dist folder exists and create it if not
+const checkDist = () => {
+  if (fs.existsSync("./dist")) return;
+  fs.mkdirSync("./dist");
+};
+
 // get content of markdown file
 export const getMd = (path) => {
   const content = fs.readFileSync(path, "utf8");
@@ -8,6 +14,7 @@ export const getMd = (path) => {
 
 // copy template.css and template.js to dist
 export const compileComplements = () => {
+  checkDist();
   fs.copyFile("./src/templates/template.css", "./dist/style.css", (err) => {
     if (err) throw err;
   });
@@ -18,6 +25,7 @@ export const compileComplements = () => {
 
 // write html file to dist with content of markdown file
 export const writeHtml = (content) => {
+  checkDist();
   fs.readFile("./src/templates/template.html", "utf8", (err, data) => {
     if (err) throw err;
     const html = data.replace("{{content}}", content);
