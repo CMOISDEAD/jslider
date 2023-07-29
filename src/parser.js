@@ -5,7 +5,7 @@ import rehypeStringify from "rehype-stringify";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import remarkGfm from "remark-gfm";
-import rehypeFormat from "rehype-format";
+import rehypePrettyCode from "rehype-pretty-code";
 
 // custom plugins
 import remarkWrapSections from "./plugins/remark.js";
@@ -19,9 +19,11 @@ export const parseMd = async (content) => {
     .use(remarkMath)
     .use(remarkWrapSections)
     .use(remarkRehype)
+    .use(rehypePrettyCode, {
+      theme: "poimandres",
+    })
     .use(rehypeWrapSections)
     .use(rehypeKatex)
-    .use(rehypeFormat)
     .use(rehypeStringify)
     .process(content);
 

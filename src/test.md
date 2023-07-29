@@ -41,14 +41,14 @@ this is a table with some data about radioactivity.
 
 # end slide with code
 
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
+```js {5} showLineNumbers   title="just some js code"
+function add(a, b) {
+  return a + b;
+}
 
-def lorenz(x, y, z, s=10, r=28, b=2.667):
-    x_dot = s*(y - x)
-    y_dot = r*x - y - x*z
-    z_dot = x*y - b*z
-    return x_dot, y_dot, z_dot
+function sub(a, b) {
+  return a - b;
+}
+
+console.log(add(1, 2) + sub(1, 2));
 ```
