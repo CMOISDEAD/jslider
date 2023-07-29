@@ -17,17 +17,19 @@ look the demo: https://shit-slider.netlify.app/
 - Math support.
 - Vi keymaps.
 
-## How use 📚 (deprecated)
+## How use 📚
 
-First clone the repo, and thats all, just edit the `index.html` file with your content.
+First clone the repo and install dependecies, and thats all, just edit the `test.md` file with your content follow the use standars.
 
 ```bash
-$ git clone https://github.com/CMOISDEAD/slider
-$ cd slider
-$ brave index.html
+$ git clone https://github.com/CMOISDEAD/jslider
+$ cd jslider
+$ npm install
+$ npm start
+$ brave dist/
 ```
 
-in the `src/` dir are the css and js file, change everything as you want.
+in the `src/templates` dir are the css and js file, change everything as you want.
 
 ## Contribute 🤝
 
@@ -35,8 +37,8 @@ Feel free to open a pull request with your changes, all ideas are welcome 😄 �
 
 ## TODOS
 
-- [ ] update README documentation.
+- [x] update README documentation.
 - [ ] remark plugin dont generate correctly the sections.
-- [ ] implement "welcome" and "dual pane" slides.
-- [ ] implement a beter ui.
+- [.] implement "welcome" and "dual pane" slides.
+- [x] implement a beter ui.
 - [ ] solve fullscreen ui error.
