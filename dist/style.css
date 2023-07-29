@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #1d1d1d;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+h1,
+p,
+pre {
+  margin: 1rem 0;
+}
+
+ul {
+  margin-left: 2vw;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.slider {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+section > div {
+  height: 100vh;
+  margin: 0 5vw; /* x axis */
+  padding: 1vh 0; /* y axis */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table caption {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+table thead {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  color: #fff;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #333333;
+}
