@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.markdown-body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+img {
+  object-fit: contain;
+}
+
+.slider {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+section > div {
+  height: 100%;
+  margin: 0 5vw; /* x axis */
+  padding: 1vh 0; /* y axis */
+}
+
+.welcome > div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}

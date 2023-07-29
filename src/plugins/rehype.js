@@ -5,7 +5,7 @@ export default function rehypeWrapSections() {
         return {
           type: "element",
           tagName: "section",
-          properties: { className: i === 0 ? "active-section" : "" },
+          properties: { className: i === 0 ? "active-section welcome" : "" },
           children: [node],
         };
       } else {
