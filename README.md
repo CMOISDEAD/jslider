@@ -37,8 +37,11 @@ Feel free to open a pull request with your changes, all ideas are welcome ðŸ˜„ ð
 
 ## TODOS
 
-- [x] update README documentation.
 - [ ] remark plugin dont generate correctly the sections.
 - [.] implement "welcome" and "dual pane" slides.
-- [x] implement a beter ui.
 - [ ] solve fullscreen ui error.
+- [ ] typescript migration.
+- [ ] integrate a cli tool.
+
+- [x] update README documentation.
+- [x] implement a beter ui.
