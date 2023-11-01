@@ -27,8 +27,8 @@ look the demo: https://shit-slider.netlify.app/
 First clone the repo and install dependecies, and thats all, just edit the `test.md` file with your content follow the use standars.
 
 ```bash
-$ git clone https://github.com/CMOISDEAD/jslider
-$ cd jslider
+$ git clone https://github.com/CMOISDEAD/spit
+$ cd spit
 $ bun install
 $ bun start
 $ brave dist/
