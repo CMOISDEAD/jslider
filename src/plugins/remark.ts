@@ -1,5 +1,5 @@
 export default function wrapSections() {
-  return (tree) => {
+  return (tree: any) => {
     const sections = [];
     let currentSection = [];
 

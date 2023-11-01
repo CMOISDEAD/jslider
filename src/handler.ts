@@ -1,4 +1,4 @@
-import fs from "fs";
+import * as fs from "node:fs";
 
 // check if dist folder exists and create it if not
 const checkDist = () => {
@@ -7,7 +7,7 @@ const checkDist = () => {
 };
 
 // get content of markdown file
-export const getMd = (path) => {
+export const getMd = (path: string) => {
   const content = fs.readFileSync(path, "utf8");
   return content;
 };
@@ -24,7 +24,7 @@ export const compileComplements = () => {
 };
 
 // write html file to dist with content of markdown file
-export const writeHtml = (content) => {
+export const writeHtml = (content: string) => {
   checkDist();
   fs.readFile("./src/templates/template.html", "utf8", (err, data) => {
     if (err) throw err;

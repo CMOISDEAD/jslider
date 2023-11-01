@@ -8,11 +8,11 @@ import remarkGfm from "remark-gfm";
 import rehypePrettyCode from "rehype-pretty-code";
 
 // custom plugins
-import remarkWrapSections from "./plugins/remark.js";
-import rehypeWrapSections from "./plugins/rehype.js";
+import remarkWrapSections from "./plugins/remark.ts";
+import rehypeWrapSections from "./plugins/rehype.ts";
 
 // parse markdown to html
-export const parseMd = async (content) => {
+export const parseMd = async (content: any) => {
   const file = await unified()
     .use(remarkParse)
     .use(remarkGfm)

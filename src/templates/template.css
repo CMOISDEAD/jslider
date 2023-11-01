@@ -9,8 +9,9 @@ body {
 }
 
 .markdown-body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "AestheticIosevka Nerd Font Mono", monospace;
   font-size: 1.5rem;
+  background: #060606 !important;
 }
 
 img {

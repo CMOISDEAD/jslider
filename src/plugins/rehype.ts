@@ -1,6 +1,6 @@
 export default function rehypeWrapSections() {
-  return (tree) => {
-    tree.children = tree.children.map((node, i) => {
+  return (tree: any) => {
+    tree.children = tree.children.map((node: any, i: number) => {
       if (node.tagName === "div") {
         return {
           type: "element",
